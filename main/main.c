@@ -5,7 +5,7 @@
 
 #define TAG "DELAY"
 
-void main(void)
+void app_main(void)
 {
     int i = 0;
     while (1)

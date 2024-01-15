@@ -1,7 +1,7 @@
 {
     "version":            "1",
     "project_name":       "esp1",
-    "project_version":    "1",
+    "project_version":    "7eae2a8-dirty",
     "project_path":       "C:/Users/user/Kamo/Projects/esp1",
     "idf_path":           "C:/Users/user/esp/esp-idf",
     "build_dir":          "C:/Users/user/Kamo/Projects/esp1/build",
@@ -790,7 +790,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "C:/Users/user/Kamo/Projects/esp1/build/esp-idf/main/libmain.a",
-            "sources": [ "C:/Users/user/Kamo/Projects/esp1/main/main.c" ],
+            "sources": [ "C:/Users/user/Kamo/Projects/esp1/main/randomGenerator.c", "C:/Users/user/Kamo/Projects/esp1/main/log.c", "C:/Users/user/Kamo/Projects/esp1/main/main.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {

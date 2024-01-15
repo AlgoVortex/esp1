@@ -1,9 +1,7 @@
 -- ccache will be used for faster recompilation
--- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
--- Could not use 'git describe' to determine PROJECT_VER.
 -- Building ESP-IDF components for target esp32
 -- Project sdkconfig file C:/Users/user/Kamo/Projects/esp1/sdkconfig
--- App "esp1" version: 1
+-- App "esp1" version: 7eae2a8-dirty
 -- Adding linker script C:/Users/user/Kamo/Projects/esp1/build/esp-idf/esp_system/ld/memory.ld
 -- Adding linker script C:/Users/user/esp/esp-idf/components/esp_system/ld/esp32/sections.ld.in
 -- Adding linker script C:/Users/user/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld

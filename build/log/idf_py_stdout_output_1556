@@ -1,0 +1,475 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\user\Kamo\Projects\esp1\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Users/user/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/user/Kamo/Projects/esp1/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/log.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/log.c.obj 
+ccache C:\Espressif\tools\xtensa-esp32-elf\esp-12.2.0_20230208\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.1.2\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DUNITY_INCLUDE_CONFIG_H -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IC:/Users/user/Kamo/Projects/esp1/build/config -IC:/Users/user/Kamo/Projects/esp1/main -IC:/Users/user/esp/esp-idf/components/newlib/platform_include -IC:/Users/user/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -IC:/Users/user/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Users/user/esp/esp-idf/components/freertos/esp_additions/include/freertos -IC:/Users/user/esp/esp-idf/components/freertos/esp_additions/include -IC:/Users/user/esp/esp-idf/components/freertos/esp_additions/arch/xtensa/include -IC:/Users/user/esp/esp-idf/components/esp_hw_support/include -IC:/Users/user/esp/esp-idf/components/esp_hw_support/include/soc -IC:/Users/user/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -IC:/Users/user/esp/esp-idf/components/esp_hw_support/port/esp32/. -IC:/Users/user/esp/esp-idf/components/esp_hw_support/port/esp32/private_include -IC:/Users/user/esp/esp-idf/components/heap/include -IC:/Users/user/esp/esp-idf/components/log/include -IC:/Users/user/esp/esp-idf/components/soc/include -IC:/Users/user/esp/esp-idf/components/soc/esp32 -IC:/Users/user/esp/esp-idf/components/soc/esp32/include -IC:/Users/user/esp/esp-idf/components/hal/esp32/include -IC:/Users/user/esp/esp-idf/components/hal/include -IC:/Users/user/esp/esp-idf/components/hal/platform_port/include -IC:/Users/user/esp/esp-idf/components/esp_rom/include -IC:/Users/user/esp/esp-idf/components/esp_rom/include/esp32 -IC:/Users/user/esp/esp-idf/components/esp_rom/esp32 -IC:/Users/user/esp/esp-idf/components/esp_common/include -IC:/Users/user/esp/esp-idf/components/esp_system/include -IC:/Users/user/esp/esp-idf/components/esp_system/port/soc -IC:/Users/user/esp/esp-idf/components/esp_system/port/include/private -IC:/Users/user/esp/esp-idf/components/xtensa/include -IC:/Users/user/esp/esp-idf/components/xtensa/esp32/include -IC:/Users/user/esp/esp-idf/components/lwip/include -IC:/Users/user/esp/esp-idf/components/lwip/include/apps -IC:/Users/user/esp/esp-idf/components/lwip/include/apps/sntp -IC:/Users/user/esp/esp-idf/components/lwip/lwip/src/include -IC:/Users/user/esp/esp-idf/components/lwip/port/include -IC:/Users/user/esp/esp-idf/components/lwip/port/freertos/include -IC:/Users/user/esp/esp-idf/components/lwip/port/esp32xx/include -IC:/Users/user/esp/esp-idf/components/lwip/port/esp32xx/include/arch -IC:/Users/user/esp/esp-idf/components/esp_ringbuf/include -IC:/Users/user/esp/esp-idf/components/efuse/include -IC:/Users/user/esp/esp-idf/components/efuse/esp32/include -IC:/Users/user/esp/esp-idf/components/driver/include -IC:/Users/user/esp/esp-idf/components/driver/deprecated -IC:/Users/user/esp/esp-idf/components/driver/analog_comparator/include -IC:/Users/user/esp/esp-idf/components/driver/dac/include -IC:/Users/user/esp/esp-idf/components/driver/gpio/include -IC:/Users/user/esp/esp-idf/components/driver/gptimer/include -IC:/Users/user/esp/esp-idf/components/driver/i2c/include -IC:/Users/user/esp/esp-idf/components/driver/i2s/include -IC:/Users/user/esp/esp-idf/components/driver/ledc/include -IC:/Users/user/esp/esp-idf/components/driver/mcpwm/include -IC:/Users/user/esp/esp-idf/components/driver/parlio/include -IC:/Users/user/esp/esp-idf/components/driver/pcnt/include -IC:/Users/user/esp/esp-idf/components/driver/rmt/include -IC:/Users/user/esp/esp-idf/components/driver/sdio_slave/include -IC:/Users/user/esp/esp-idf/components/driver/sdmmc/include -IC:/Users/user/esp/esp-idf/components/driver/sigma_delta/include -IC:/Users/user/esp/esp-idf/components/driver/spi/include -IC:/Users/user/esp/esp-idf/components/driver/temperature_sensor/include -IC:/Users/user/esp/esp-idf/components/driver/touch_sensor/include -IC:/Users/user/esp/esp-idf/components/driver/twai/include -IC:/Users/user/esp/esp-idf/components/driver/uart/include -IC:/Users/user/esp/esp-idf/components/driver/usb_serial_jtag/include -IC:/Users/user/esp/esp-idf/components/driver/touch_sensor/esp32/include -IC:/Users/user/esp/esp-idf/components/esp_pm/include -IC:/Users/user/esp/esp-idf/components/mbedtls/port/include -IC:/Users/user/esp/esp-idf/components/mbedtls/mbedtls/include -IC:/Users/user/esp/esp-idf/components/mbedtls/mbedtls/library -IC:/Users/user/esp/esp-idf/components/mbedtls/esp_crt_bundle/include -IC:/Users/user/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -IC:/Users/user/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -IC:/Users/user/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -IC:/Users/user/esp/esp-idf/components/esp_app_format/include -IC:/Users/user/esp/esp-idf/components/bootloader_support/include -IC:/Users/user/esp/esp-idf/components/bootloader_support/bootloader_flash/include -IC:/Users/user/esp/esp-idf/components/esp_partition/include -IC:/Users/user/esp/esp-idf/components/app_update/include -IC:/Users/user/esp/esp-idf/components/esp_mm/include -IC:/Users/user/esp/esp-idf/components/spi_flash/include -IC:/Users/user/esp/esp-idf/components/pthread/include -IC:/Users/user/esp/esp-idf/components/esp_timer/include -IC:/Users/user/esp/esp-idf/components/app_trace/include -IC:/Users/user/esp/esp-idf/components/esp_event/include -IC:/Users/user/esp/esp-idf/components/nvs_flash/include -IC:/Users/user/esp/esp-idf/components/esp_phy/include -IC:/Users/user/esp/esp-idf/components/esp_phy/esp32/include -IC:/Users/user/esp/esp-idf/components/vfs/include -IC:/Users/user/esp/esp-idf/components/esp_netif/include -IC:/Users/user/esp/esp-idf/components/wpa_supplicant/include -IC:/Users/user/esp/esp-idf/components/wpa_supplicant/port/include -IC:/Users/user/esp/esp-idf/components/wpa_supplicant/esp_supplicant/include -IC:/Users/user/esp/esp-idf/components/esp_coex/include -IC:/Users/user/esp/esp-idf/components/esp_wifi/include -IC:/Users/user/esp/esp-idf/components/esp_wifi/wifi_apps/include -IC:/Users/user/esp/esp-idf/components/unity/include -IC:/Users/user/esp/esp-idf/components/unity/unity/src -IC:/Users/user/esp/esp-idf/components/cmock/CMock/src -IC:/Users/user/esp/esp-idf/components/console -IC:/Users/user/esp/esp-idf/components/http_parser -IC:/Users/user/esp/esp-idf/components/esp-tls -IC:/Users/user/esp/esp-idf/components/esp-tls/esp-tls-crypto -IC:/Users/user/esp/esp-idf/components/esp_adc/include -IC:/Users/user/esp/esp-idf/components/esp_adc/interface -IC:/Users/user/esp/esp-idf/components/esp_adc/esp32/include -IC:/Users/user/esp/esp-idf/components/esp_adc/deprecated/include -IC:/Users/user/esp/esp-idf/components/esp_eth/include -IC:/Users/user/esp/esp-idf/components/esp_gdbstub/include -IC:/Users/user/esp/esp-idf/components/esp_hid/include -IC:/Users/user/esp/esp-idf/components/tcp_transport/include -IC:/Users/user/esp/esp-idf/components/esp_http_client/include -IC:/Users/user/esp/esp-idf/components/esp_http_server/include -IC:/Users/user/esp/esp-idf/components/esp_https_ota/include -IC:/Users/user/esp/esp-idf/components/esp_psram/include -IC:/Users/user/esp/esp-idf/components/esp_lcd/include -IC:/Users/user/esp/esp-idf/components/esp_lcd/interface -IC:/Users/user/esp/esp-idf/components/protobuf-c/protobuf-c -IC:/Users/user/esp/esp-idf/components/protocomm/include/common -IC:/Users/user/esp/esp-idf/components/protocomm/include/security -IC:/Users/user/esp/esp-idf/components/protocomm/include/transports -IC:/Users/user/esp/esp-idf/components/esp_local_ctrl/include -IC:/Users/user/esp/esp-idf/components/espcoredump/include -IC:/Users/user/esp/esp-idf/components/espcoredump/include/port/xtensa -IC:/Users/user/esp/esp-idf/components/wear_levelling/include -IC:/Users/user/esp/esp-idf/components/sdmmc/include -IC:/Users/user/esp/esp-idf/components/fatfs/diskio -IC:/Users/user/esp/esp-idf/components/fatfs/vfs -IC:/Users/user/esp/esp-idf/components/fatfs/src -IC:/Users/user/esp/esp-idf/components/idf_test/include -IC:/Users/user/esp/esp-idf/components/idf_test/include/esp32 -IC:/Users/user/esp/esp-idf/components/ieee802154/include -IC:/Users/user/esp/esp-idf/components/json/cJSON -IC:/Users/user/esp/esp-idf/components/mqtt/esp-mqtt/include -IC:/Users/user/esp/esp-idf/components/perfmon/include -IC:/Users/user/esp/esp-idf/components/spiffs/include -IC:/Users/user/esp/esp-idf/components/wifi_provisioning/include -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=C:/Users/user/Kamo/Projects/esp1=. -fmacro-prefix-map=C:/Users/user/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/log.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\log.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/log.c.obj -c C:/Users/user/Kamo/Projects/esp1/main/log.c
+In file included from C:/Users/user/Kamo/Projects/esp1/main/log.c:2:
+C:/Users/user/Kamo/Projects/esp1/main/log.c: In function 'app_main':
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:265:27: error: too many arguments for format [-Werror=format-extra-args]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:268:27: note: in expansion of macro 'LOG_COLOR'
+  268 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_E'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:410:86: note: in expansion of macro 'LOG_FORMAT'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:340:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  340 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:13:5: note: in expansion of macro 'ESP_LOGE'
+   13 |     ESP_LOGE("TAG 2", "This is an error", nuber++);
+      |     ^~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:265:27: error: too many arguments for format [-Werror=format-extra-args]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:269:27: note: in expansion of macro 'LOG_COLOR'
+  269 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_W'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:411:86: note: in expansion of macro 'LOG_FORMAT'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:340:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  340 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:13:5: note: in expansion of macro 'ESP_LOGE'
+   13 |     ESP_LOGE("TAG 2", "This is an error", nuber++);
+      |     ^~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:13:1: error: too many arguments for format [-Werror=format-extra-args]
+   13 |     ESP_LOGE("TAG 2", "This is an error", nuber++);
+      | ^   ~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:340:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  340 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:13:5: note: in expansion of macro 'ESP_LOGE'
+   13 |     ESP_LOGE("TAG 2", "This is an error", nuber++);
+      |     ^~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:13:1: error: too many arguments for format [-Werror=format-extra-args]
+   13 |     ESP_LOGE("TAG 2", "This is an error", nuber++);
+      | ^   ~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:340:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  340 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:13:5: note: in expansion of macro 'ESP_LOGE'
+   13 |     ESP_LOGE("TAG 2", "This is an error", nuber++);
+      |     ^~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:265:27: error: too many arguments for format [-Werror=format-extra-args]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:270:27: note: in expansion of macro 'LOG_COLOR'
+  270 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_I'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:414:86: note: in expansion of macro 'LOG_FORMAT'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:340:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  340 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:13:5: note: in expansion of macro 'ESP_LOGE'
+   13 |     ESP_LOGE("TAG 2", "This is an error", nuber++);
+      |     ^~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:265:27: error: too many arguments for format [-Werror=format-extra-args]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:268:27: note: in expansion of macro 'LOG_COLOR'
+  268 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_E'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:410:86: note: in expansion of macro 'LOG_FORMAT'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:341:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  341 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:14:5: note: in expansion of macro 'ESP_LOGW'
+   14 |     ESP_LOGW("TAG 2", "This is a warning", nuber++);
+      |     ^~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:265:27: error: too many arguments for format [-Werror=format-extra-args]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:269:27: note: in expansion of macro 'LOG_COLOR'
+  269 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_W'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:411:86: note: in expansion of macro 'LOG_FORMAT'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:341:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  341 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:14:5: note: in expansion of macro 'ESP_LOGW'
+   14 |     ESP_LOGW("TAG 2", "This is a warning", nuber++);
+      |     ^~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:14:1: error: too many arguments for format [-Werror=format-extra-args]
+   14 |     ESP_LOGW("TAG 2", "This is a warning", nuber++);
+      | ^   ~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:341:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  341 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:14:5: note: in expansion of macro 'ESP_LOGW'
+   14 |     ESP_LOGW("TAG 2", "This is a warning", nuber++);
+      |     ^~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:14:1: error: too many arguments for format [-Werror=format-extra-args]
+   14 |     ESP_LOGW("TAG 2", "This is a warning", nuber++);
+      | ^   ~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:341:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  341 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:14:5: note: in expansion of macro 'ESP_LOGW'
+   14 |     ESP_LOGW("TAG 2", "This is a warning", nuber++);
+      |     ^~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:265:27: error: too many arguments for format [-Werror=format-extra-args]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:270:27: note: in expansion of macro 'LOG_COLOR'
+  270 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_I'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:414:86: note: in expansion of macro 'LOG_FORMAT'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:341:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  341 | #define ESP_LOGW( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:14:5: note: in expansion of macro 'ESP_LOGW'
+   14 |     ESP_LOGW("TAG 2", "This is a warning", nuber++);
+      |     ^~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:265:27: error: too many arguments for format [-Werror=format-extra-args]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:268:27: note: in expansion of macro 'LOG_COLOR'
+  268 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_E'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:410:86: note: in expansion of macro 'LOG_FORMAT'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:15:5: note: in expansion of macro 'ESP_LOGI'
+   15 |     ESP_LOGI("TAG 2", "This is an info", nuber++);
+      |     ^~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:265:27: error: too many arguments for format [-Werror=format-extra-args]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:269:27: note: in expansion of macro 'LOG_COLOR'
+  269 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_W'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:411:86: note: in expansion of macro 'LOG_FORMAT'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:15:5: note: in expansion of macro 'ESP_LOGI'
+   15 |     ESP_LOGI("TAG 2", "This is an info", nuber++);
+      |     ^~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:15:1: error: too many arguments for format [-Werror=format-extra-args]
+   15 |     ESP_LOGI("TAG 2", "This is an info", nuber++);
+      | ^   ~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:15:5: note: in expansion of macro 'ESP_LOGI'
+   15 |     ESP_LOGI("TAG 2", "This is an info", nuber++);
+      |     ^~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:15:1: error: too many arguments for format [-Werror=format-extra-args]
+   15 |     ESP_LOGI("TAG 2", "This is an info", nuber++);
+      | ^   ~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:15:5: note: in expansion of macro 'ESP_LOGI'
+   15 |     ESP_LOGI("TAG 2", "This is an info", nuber++);
+      |     ^~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:265:27: error: too many arguments for format [-Werror=format-extra-args]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:270:27: note: in expansion of macro 'LOG_COLOR'
+  270 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_I'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:414:86: note: in expansion of macro 'LOG_FORMAT'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:15:5: note: in expansion of macro 'ESP_LOGI'
+   15 |     ESP_LOGI("TAG 2", "This is an info", nuber++);
+      |     ^~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:265:27: error: too many arguments for format [-Werror=format-extra-args]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:268:27: note: in expansion of macro 'LOG_COLOR'
+  268 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_E'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:410:86: note: in expansion of macro 'LOG_FORMAT'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:343:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  343 | #define ESP_LOGD( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_DEBUG,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:16:5: note: in expansion of macro 'ESP_LOGD'
+   16 |     ESP_LOGD("TAG 2", "This is a debug", nuber++);
+      |     ^~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:265:27: error: too many arguments for format [-Werror=format-extra-args]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:269:27: note: in expansion of macro 'LOG_COLOR'
+  269 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_W'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:411:86: note: in expansion of macro 'LOG_FORMAT'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:343:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  343 | #define ESP_LOGD( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_DEBUG,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:16:5: note: in expansion of macro 'ESP_LOGD'
+   16 |     ESP_LOGD("TAG 2", "This is a debug", nuber++);
+      |     ^~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:16:1: error: too many arguments for format [-Werror=format-extra-args]
+   16 |     ESP_LOGD("TAG 2", "This is a debug", nuber++);
+      | ^   ~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:343:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  343 | #define ESP_LOGD( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_DEBUG,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:16:5: note: in expansion of macro 'ESP_LOGD'
+   16 |     ESP_LOGD("TAG 2", "This is a debug", nuber++);
+      |     ^~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:16:1: error: too many arguments for format [-Werror=format-extra-args]
+   16 |     ESP_LOGD("TAG 2", "This is a debug", nuber++);
+      | ^   ~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:343:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  343 | #define ESP_LOGD( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_DEBUG,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:16:5: note: in expansion of macro 'ESP_LOGD'
+   16 |     ESP_LOGD("TAG 2", "This is a debug", nuber++);
+      |     ^~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:265:27: error: too many arguments for format [-Werror=format-extra-args]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:270:27: note: in expansion of macro 'LOG_COLOR'
+  270 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_I'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:414:86: note: in expansion of macro 'LOG_FORMAT'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:343:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  343 | #define ESP_LOGD( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_DEBUG,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:16:5: note: in expansion of macro 'ESP_LOGD'
+   16 |     ESP_LOGD("TAG 2", "This is a debug", nuber++);
+      |     ^~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:265:27: error: too many arguments for format [-Werror=format-extra-args]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:268:27: note: in expansion of macro 'LOG_COLOR'
+  268 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_E'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:410:86: note: in expansion of macro 'LOG_FORMAT'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:344:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  344 | #define ESP_LOGV( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_VERBOSE, tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:17:5: note: in expansion of macro 'ESP_LOGV'
+   17 |     ESP_LOGV("TAG 2", "This is a verbose", nuber++);
+      |     ^~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:265:27: error: too many arguments for format [-Werror=format-extra-args]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:269:27: note: in expansion of macro 'LOG_COLOR'
+  269 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_W'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:411:86: note: in expansion of macro 'LOG_FORMAT'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:344:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  344 | #define ESP_LOGV( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_VERBOSE, tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:17:5: note: in expansion of macro 'ESP_LOGV'
+   17 |     ESP_LOGV("TAG 2", "This is a verbose", nuber++);
+      |     ^~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:17:1: error: too many arguments for format [-Werror=format-extra-args]
+   17 |     ESP_LOGV("TAG 2", "This is a verbose", nuber++);
+      | ^   ~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:344:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  344 | #define ESP_LOGV( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_VERBOSE, tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:17:5: note: in expansion of macro 'ESP_LOGV'
+   17 |     ESP_LOGV("TAG 2", "This is a verbose", nuber++);
+      |     ^~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:17:1: error: too many arguments for format [-Werror=format-extra-args]
+   17 |     ESP_LOGV("TAG 2", "This is a verbose", nuber++);
+      | ^   ~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:344:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  344 | #define ESP_LOGV( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_VERBOSE, tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:17:5: note: in expansion of macro 'ESP_LOGV'
+   17 |     ESP_LOGV("TAG 2", "This is a verbose", nuber++);
+      |     ^~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:265:27: error: too many arguments for format [-Werror=format-extra-args]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:270:27: note: in expansion of macro 'LOG_COLOR'
+  270 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_I'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:414:86: note: in expansion of macro 'LOG_FORMAT'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Users/user/esp/esp-idf/components/log/include/esp_log.h:344:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  344 | #define ESP_LOGV( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_VERBOSE, tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/user/Kamo/Projects/esp1/main/log.c:17:5: note: in expansion of macro 'ESP_LOGV'
+   17 |     ESP_LOGV("TAG 2", "This is a verbose", nuber++);
+      |     ^~~~~~~~
+cc1.exe: some warnings being treated as errors
+ninja: build stopped: subcommand failed.
